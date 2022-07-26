@@ -9,6 +9,6 @@ O cursos abordará, dentre outras coisas:
 - HTML
 - CSS
 - Javascript
-- Conceitos gerais de UX/UI
+- Conceitos de UX/UI
 - Diversos projetos responsivos
 - Deploy das aplicações
