@@ -1,8 +1,14 @@
 # Curso Web Design Completo
 
-Neste curso você irá aprender e desenvolver suas habilidades com HTML e CSS, além de ter uma boa base da linguagem de programação Javascript
+[Link do curso](https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/)
 
-Já com relação ao CSS você verá em detalhes todas as propriedades necessárias para criar layouts de páginas e sites na web. 
-Iremos também desenvolver um projeto responsivo, ou seja, que funciona bem em todos os dispositivos, mobiles, tablets e desktop.
+Neste repositório pretendo registrar os pontos chaves visto por mim, no curso.
 
-Dará os primeiros passos com Javascript e descobrirá o poder dessa linguagem, que atualmente é a mais utilizada entre os desenvolvedores web.
+O cursos abordará, dentre outras coisas:
+
+- HTML
+- CSS
+- Javascript
+- Conceitos gerais de UX/UI
+- Diversos projetos responsivos
+- Deploy das aplicações
