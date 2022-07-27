@@ -1,0 +1,29 @@
+body {
+  font-family: arial, sans-serif;
+  background-color: azure;
+}
+
+.container {
+  margin: 20px 40px 40px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3em;
+  background-color: pink;
+  color: orange;
+  padding: 10px;
+}
+
+.title {
+ background-color: lightgrey; 
+ padding: 10px;
+ border-bottom: 4px solid;
+ color: red;
+ margin-top: 80px;
+}
+
+.discription-list {
+  padding-left: 0;
+  list-style-position: inside;
+}
