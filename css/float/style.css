@@ -1,0 +1,12 @@
+.block1 {
+  background-color: aliceblue;
+  float: left;
+} 
+.block2 {
+  background-color: antiquewhite;
+  float: right;
+}
+.block3 {
+  background-color: aquamarine;
+  clear: right;
+}

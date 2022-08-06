@@ -4,9 +4,13 @@
 ![Box Model CSS Info](https://pbs.twimg.com/media/EdIoJ0CXoAA3scd.jpg)
 
 - Background-color irá afetar content + padding
-- Por padrão With e height não incluem padding e borda
+- Por padrão padding soma ao width e height
 - Box sizing border box, faz com que with e height não incluam padding e borda
 
 - Margin serve para distanciar um elemento do outro
 - Border é a borda do elemento, que vem depois do padding
 - Padding é o espaço entre o conteudo e sua borda
+
+## box-sizing: border-box
+
+Faz com que o padding do elemento não some ao with e height
