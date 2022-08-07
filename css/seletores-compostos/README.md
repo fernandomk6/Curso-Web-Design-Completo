@@ -47,15 +47,15 @@ Corresponde a elementos com um **atributo** attr cujo nome é o valor entre colc
 Corresponde a elementos com um atributo attr cujo valor é **exatamente** 
 value - a string entre aspas.
 
-`[attr^=value]	li[class^="box-"]`	
+- `[attr^=value]	li[class^="box-"]`	
 Corresponde a elementos com um atributo attr (cujo nome é o valor entre colchetes), 
 cujo valor começa com valor.
 
-`[attr$=value] li[class$="-box"]`
+- `[attr$=value] li[class$="-box"]`
 
 Corresponde a elementos com um atributo attr cujo valor termina com valor.
 
-`[attr*=value]	li[class*="box"]`
+- `[attr*=value]	li[class*="box"]`
 
 Corresponde a elementos com um atributo attr cujo valor contém o valor 
 em qualquer lugar dentro da string.
@@ -79,7 +79,7 @@ body *:not(p) { color: green; }
 
 ### Seletores de irmãos adjacentes (posto ao lado de) (`+`)
 
-O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente.
+O combinador + seleciona os nós que seguem **imediatamente** o elemento especificado anteriormente.
 Sintaxe: `A + B`.
 Exemplo: ul + li irá corresponder a qualquer elemento `<li>` que segue imediatamente após um elemento `<ul>`.
 
@@ -94,14 +94,14 @@ dentro de um mesmo elemento pai.
 
 ### Seletor de filhos diretos (`>`)
 
-O combinador > selecina nós que são filhos diretos do elemento especificado anteriormente.
+O combinador > selecina nós que são **filhos diretos** do elemento especificado anteriormente.
 Sintaxe: `A > B`
 Exemplo: ul > li irá corresponder a todo elemento `<li>` que estiver diretamente dentro 
 de um elemento `<ul>` especificado.
 
 ### Seletor de descendentes (` `)
 
-O combinador seleciona os nós que são filhos do elemento especificado anteriormente 
+O combinador seleciona os nós que são **decendentes** do elemento especificado anteriormente 
 (não é necessário que seja um filho direto).
 Sintaxe: `A B`
 Exemplo: div span irá corresponder a todo e qualquer elemento `<span>` que estiver 
