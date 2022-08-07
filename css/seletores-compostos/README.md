@@ -2,6 +2,8 @@
 
 Os Seletores definem quais elementos um conjunto de regras CSS se aplica.
 
+---
+
 ## Seletores básicos
 
 ### Por tag
@@ -16,12 +18,11 @@ Sintaxe: `.nome-da-classe { ... }`
 
 Sintaxe: `#nome-do-id { ... }`
 
-### Universais
+### Universal
 
 Sintaxe: `* { ... }`
 
-### Atributos
-
+### Por atributo
 Sintaxe: 
 `[atrib] [atrib=valor] [atrib~=valor] [atrib|=valor] [atrib^=valor] [atrib$=valor] [atrib*=valor] { ... }`
 
@@ -43,32 +44,62 @@ Corresponde a elementos com um **atributo** attr cujo nome é o valor entre colc
 
 - `[attr=value]	a[href="https://example.com"]`
 
-Corresponde a elementos com um atributo attr cujo valor é **exatamente** value - a string entre aspas.
+Corresponde a elementos com um atributo attr cujo valor é **exatamente** 
+value - a string entre aspas.
+
+`[attr^=value]	li[class^="box-"]`	
+Corresponde a elementos com um atributo attr (cujo nome é o valor entre colchetes), 
+cujo valor começa com valor.
+
+`[attr$=value] li[class$="-box"]`
+
+Corresponde a elementos com um atributo attr cujo valor termina com valor.
+
+`[attr*=value]	li[class*="box"]`
+
+Corresponde a elementos com um atributo attr cujo valor contém o valor 
+em qualquer lugar dentro da string.
+
+### :not(*seletor*)
+
+A pseudo-classe CSS de negação, `:not(X)`, é uma notação funcional que recebe 
+um seletor simples X como argumento. Ela seleciona um elemento que **não** é 
+representado por seu argumento. X não pode conter outro seletor de negação.
+
+`:not(selector) { style properties }`
+
+```css
+p:not(.classico) { color: red; }
+body *:not(p) { color: green; }
+```
+
+---
 
 ## Combinadores
 
-### Seletores de irmãos adjacentes (posto ao lado de)
+### Seletores de irmãos adjacentes (posto ao lado de) (`+`)
 
 O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente.
 Sintaxe: `A + B`.
 Exemplo: ul + li irá corresponder a qualquer elemento `<li>` que segue imediatamente após um elemento `<ul>`.
 
-### Seletores gerais de irmãos
+### Seletor de proxímos irmãos (`~`)
 
 O combinador ~ seleciona os nós que seguem (não necessariamente imediatamente) o elemento 
 especificado anteriormente, se ambos os elementos compartilham o mesmo pai.
+*Seleciona TODOS os irmãos seguintes, não os anteriores*
 Sintaxe: `A ~ B`.
 Exemplo: p ~ span irá corresponder a todo elemento `<span>` que seguir um elemento `<p>` 
 dentro de um mesmo elemento pai.
 
-### Seletor de filhos
+### Seletor de filhos diretos (`>`)
 
 O combinador > selecina nós que são filhos diretos do elemento especificado anteriormente.
 Sintaxe: `A > B`
 Exemplo: ul > li irá corresponder a todo elemento `<li>` que estiver diretamente dentro 
 de um elemento `<ul>` especificado.
 
-### Seletor de descendentes
+### Seletor de descendentes (` `)
 
 O combinador seleciona os nós que são filhos do elemento especificado anteriormente 
 (não é necessário que seja um filho direto).
